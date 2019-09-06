@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class CharacterController : MonoBehaviour
 {
 
@@ -19,10 +20,19 @@ public class CharacterController : MonoBehaviour
     [Tooltip("Velocidad de rotación en grados/s en el eje horizontal")]
     public float turnSpeed;
 
+    public float moveForce;
+    public float turnForce;
+
+    private Rigidbody _rb;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        //En el caso que la componente la tenga un hijo
+        //this._rb = GetComponentInChildren<Rigidbody>();
+
+        //En el caso que la componente la tenga el padre
+        this._rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -44,8 +54,22 @@ public class CharacterController : MonoBehaviour
         //CINEMÁTICA
         //S = V * t * dy
         //theta = w * t * dx
-        this.transform.Translate(Vector3.forward * vInput * moveSpeed * Time.fixedDeltaTime);
-        this.transform.Rotate(Vector3.up * hInput * turnSpeed * Time.fixedDeltaTime);
+        //this.transform.Translate(Vector3.forward * vInput * moveSpeed * Time.fixedDeltaTime);
+        //this.transform.Rotate(Vector3.up * hInput * turnSpeed * Time.fixedDeltaTime);
+
+
+        //Cinemática con Rigidbody
+        /*Vector3 rotation = Vector3.up * hInput*turnSpeed;
+        Quaternion angleRotation = Quaternion.Euler(rotation * Time.fixedDeltaTime);
+
+        _rb.MovePosition(this.transform.position + 
+                         this.transform.forward * vInput * Time.fixedDeltaTime*moveSpeed);
+        _rb.MoveRotation(_rb.rotation * angleRotation);
+*/
+
+
+        _rb.AddForce(this.transform.forward * moveForce*vInput);
+        _rb.AddTorque(this.transform.up * turnForce * hInput);
 
     }
 }

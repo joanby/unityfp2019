@@ -9,6 +9,15 @@ public class CameraFollow : MonoBehaviour
 
     public Transform target;
 
+    private void Start()
+    {
+        if(target==null){
+            //El game designer se ha olvidado de poner un objetivo para la camara
+            //target = GameObject.Find("Player").transform;
+            //target = GameObject.FindGameObjectWithTag("Player").transform;
+            target = FindObjectOfType<CharacterController>().transform;
+        }
+    }
 
     private void LateUpdate()
     {
