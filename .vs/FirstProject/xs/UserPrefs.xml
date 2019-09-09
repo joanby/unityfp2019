@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{870A5C0D-D9BE-23F7-33B1-9047EE99CBA5}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CharacterController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/MyFirstScript.cs" Line="58" Column="44" />
+      <File FileName="Assets/Scripts/Character.cs" Line="51" Column="1" />
+      <File FileName="Assets/Scripts/Archer.cs" Line="14" Column="29" />
+      <File FileName="Assets/Scripts/CameraBehaviour.cs" Line="37" Column="12" />
+      <File FileName="Assets/Scripts/CharacterController.cs" Line="96" Column="18" />
+      <File FileName="Assets/Scripts/CameraFollow.cs" Line="23" Column="6" />
+      <File FileName="Assets/Scripts/Item.cs" Line="16" Column="47" />
+      <File FileName="Assets/Scripts/EnemyBehaviour.cs" Line="15" Column="5" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

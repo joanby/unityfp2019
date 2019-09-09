@@ -34,3 +34,6 @@ Cmd: disassembleShader
   api=15 insize=0 outsize=57 ok=1
 Cmd: disassembleShader
   api=14 insize=3806 outsize=3758 ok=1
+Unhandled exception: Protocol error - unexpected end of data (did the Editor crash?)
+
+Quitting shader compiler process
