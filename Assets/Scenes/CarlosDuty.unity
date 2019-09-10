@@ -608,6 +608,36 @@ Transform:
   m_Father: {fileID: 2111081945}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &265971349
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 265971350}
+  m_Layer: 0
+  m_Name: Fire Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &265971350
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265971349}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.009, y: 0.336, z: 0.994}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 698657670}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &320668022
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,7 +737,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18354
+  m_Name: pb_Mesh18378
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1254,6 +1284,7 @@ MonoBehaviour:
     m_Bits: 2048
   bullet: {fileID: 3554074422565272823, guid: 1f9c0e9cc4f714541bf6c4ae5a128679, type: 3}
   bulletSpeed: 120
+  fireSpot: {fileID: 265971349}
   moveForce: 5
   turnForce: 10
 --- !u!136 &698657667
@@ -1323,7 +1354,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 698657665}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.27, y: 1.58, z: -7.7453}
+  m_LocalPosition: {x: 1.27, y: 1.58, z: -7.741}
   m_LocalScale: {x: 0.38683444, y: 0.38683444, z: 0.38683444}
   m_Children:
   - {fileID: 1809467748}
@@ -1331,6 +1362,7 @@ Transform:
   - {fileID: 802027825}
   - {fileID: 320668023}
   - {fileID: 1190176146}
+  - {fileID: 265971350}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1343,8 +1375,8 @@ Rigidbody:
   m_GameObject: {fileID: 698657665}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 1
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0

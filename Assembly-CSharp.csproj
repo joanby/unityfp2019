@@ -75,9 +75,11 @@
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
     <Compile Include="Assets\Scripts\CharacterController.cs" />
+    <Compile Include="Assets\Scripts\DestroyAfterTime.cs" />
     <Compile Include="Assets\Scripts\EnemyBehaviour.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\MyFirstScript.cs" />
+    <Compile Include="Assets\Scripts\ObjectPool.cs" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/JuanGabriel/Developer/Unity Projects/FirstProject/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

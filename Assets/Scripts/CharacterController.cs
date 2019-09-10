@@ -35,7 +35,7 @@ public class CharacterController : MonoBehaviour
     public GameObject bullet;
     public float bulletSpeed = 100f;
 
-
+    public GameObject fireSpot;
 
 
     public float moveForce;
@@ -87,14 +87,19 @@ public class CharacterController : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0)){
 
-            GameObject newBullet = Instantiate(
-                bullet,
-                this.transform.position,//posicion del player
-                this.transform.rotation //ángulo de rotación del player
-            ) as GameObject;
+            GameObject newBullet = ObjectPool.SharedInstance.GetPooledObject();
 
-            Rigidbody bulletRB = newBullet.GetComponent<Rigidbody>();
-            bulletRB.velocity = this.transform.forward * bulletSpeed;
+            if (newBullet != null)
+            {
+                newBullet.transform.position = fireSpot.transform.position;
+                newBullet.transform.rotation = fireSpot.transform.rotation;
+                newBullet.SetActive(true);
+
+                Rigidbody bulletRB = newBullet.GetComponent<Rigidbody>();
+                bulletRB.velocity = this.transform.forward * bulletSpeed;
+            }
+
+
 
         }
 
