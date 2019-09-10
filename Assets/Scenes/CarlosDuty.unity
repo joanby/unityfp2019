@@ -1355,7 +1355,7 @@ Transform:
   m_GameObject: {fileID: 698657665}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.27, y: 1.58, z: -7.741}
-  m_LocalScale: {x: 0.38683444, y: 0.38683444, z: 0.38683444}
+  m_LocalScale: {x: 0.13765891, y: 0.13765891, z: 0.13765891}
   m_Children:
   - {fileID: 1809467748}
   - {fileID: 809373259}
@@ -5936,8 +5936,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f8f5f1a0291742b6b065339c2c0731a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraOffset: {x: 0, y: 3, z: -5}
+  cameraOffset: {x: 0, y: 4, z: -7}
   target: {fileID: 698657670}
+--- !u!1 &1580634680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1580634682}
+  - component: {fileID: 1580634683}
+  - component: {fileID: 1580634681}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1580634681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580634680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ade9b9346564a8f91af988925f490e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObjects: []
+  objectToPool: {fileID: 3554074422565272823, guid: 1f9c0e9cc4f714541bf6c4ae5a128679,
+    type: 3}
+  numberOfObjectToPool: 200
+  timeToDestroy: 3
+--- !u!4 &1580634682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580634680}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.27, y: 1.7308655, z: -7.408754}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1580634683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580634680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32d7011d449be4ff98fb16d7a041c4be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1587860649
 GameObject:
   m_ObjectHideFlags: 0
