@@ -251,6 +251,12 @@
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>/Users/JuanGabriel/Developer/Unity Projects/FirstProject/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>/Users/JuanGabriel/Developer/Unity Projects/FirstProject/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>/Users/JuanGabriel/Developer/Unity Projects/FirstProject/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Hub/Editor/2019.1.8f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>
