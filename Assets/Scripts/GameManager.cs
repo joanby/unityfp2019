@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     private float totalTime = 0;
 
 
-    public bool showWinScreen = false;
+    public bool showWinScreen = false, showLoseScreen = false;
 
     private int playerHP = 3;
     public int HP {
@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
             playerHP = value;
             if(playerHP<=0){
                 Debug.Log("GAME OVER");
+                Time.timeScale = 0;
+                showLoseScreen = true;
             }
         }
     }
@@ -89,9 +91,24 @@ public class GameManager : MonoBehaviour
                     PlayerPrefs.SetFloat("record", totalTime);
                 }
 
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-                Time.timeScale = 1;
+                RestartLevel();
             }
         }
+
+        if (showLoseScreen)
+        {
+            if (GUI.Button(new Rect(Screen.width / 2 - 200, Screen.height / 2 - 100,
+                                   400, 200), "GAME OVER!\n Has perdido"))
+            {
+                RestartLevel();
+
+            }
+        }
+    }
+
+
+    void RestartLevel(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
     }
 }
