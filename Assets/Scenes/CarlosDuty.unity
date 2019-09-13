@@ -351,6 +351,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1099411709476590303, guid: b580bfa81d535480a809a9e3e885b42c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 4893304288961925870, guid: b580bfa81d535480a809a9e3e885b42c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -570,7 +575,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 3895
+    m_Bits: 28471
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -661,7 +666,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 3895
+    m_Bits: 28471
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -726,7 +731,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 265971350}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Fire Point
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
@@ -741,7 +746,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 265971349}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.009, y: 0.336, z: 0.994}
+  m_LocalPosition: {x: -0.009, y: 0.336, z: 1.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 698657670}
@@ -789,7 +794,7 @@ GameObject:
   - component: {fileID: 320668026}
   - component: {fileID: 320668025}
   - component: {fileID: 320668024}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Rim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -876,7 +881,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60536
+  m_Name: pb_Mesh82980
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1051,6 +1056,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1099411709476590303, guid: b580bfa81d535480a809a9e3e885b42c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 4893304288961925870, guid: b580bfa81d535480a809a9e3e885b42c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1178,7 +1188,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 3895
+    m_Bits: 28471
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -1269,7 +1279,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 3895
+    m_Bits: 28471
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -1525,7 +1535,7 @@ GameObject:
   - component: {fileID: 674462470}
   - component: {fileID: 674462469}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Image Mask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1615,7 +1625,7 @@ GameObject:
   - component: {fileID: 698657667}
   - component: {fileID: 698657666}
   - component: {fileID: 698657671}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1784,7 +1794,7 @@ GameObject:
   - component: {fileID: 754387143}
   - component: {fileID: 754387142}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: Minimap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1990,7 +2000,7 @@ GameObject:
   - component: {fileID: 802027828}
   - component: {fileID: 802027827}
   - component: {fileID: 802027826}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Left Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2081,7 +2091,7 @@ GameObject:
   - component: {fileID: 809373262}
   - component: {fileID: 809373261}
   - component: {fileID: 809373260}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Right Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2823,6 +2833,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 1099411709476590303, guid: b580bfa81d535480a809a9e3e885b42c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 4893304288961925870, guid: b580bfa81d535480a809a9e3e885b42c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3084,7 +3099,7 @@ GameObject:
   - component: {fileID: 1024069679}
   - component: {fileID: 1024069678}
   - component: {fileID: 1024069677}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3207,7 +3222,7 @@ GameObject:
   - component: {fileID: 1190176149}
   - component: {fileID: 1190176148}
   - component: {fileID: 1190176147}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Arch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6313,7 +6328,7 @@ GameObject:
   - component: {fileID: 1421358941}
   - component: {fileID: 1421358943}
   - component: {fileID: 1421358942}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Minimap Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6397,7 +6412,7 @@ GameObject:
   - component: {fileID: 1437964638}
   - component: {fileID: 1437964637}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Texture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6417,11 +6432,11 @@ RectTransform:
   m_Father: {fileID: 1955287153}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 188.3, y: 94.1}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -5.399994, y: 0}
   m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &1437964637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6615,7 +6630,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 3895
+    m_Bits: 28471
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -6829,7 +6844,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 3383
+    m_Bits: 27959
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -7187,7 +7202,7 @@ GameObject:
   - component: {fileID: 1809467751}
   - component: {fileID: 1809467750}
   - component: {fileID: 1809467749}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Nose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7506,7 +7521,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 3895
+    m_Bits: 28471
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0

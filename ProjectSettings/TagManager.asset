@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Fire
+  - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -19,8 +21,8 @@ TagManager:
   - Post Processing Layer
   - Ground
   - Minimap Only
-  - 
-  - 
+  - Player
+  - Non Collide With Player
   - 
   - 
   - 
