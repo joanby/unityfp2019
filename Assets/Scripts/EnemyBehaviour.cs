@@ -8,6 +8,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(SphereCollider))]
 public class EnemyBehaviour : MonoBehaviour
 {
+    public Transform player;
 
     public Transform patrolRoute;
 
@@ -21,6 +22,9 @@ public class EnemyBehaviour : MonoBehaviour
     private void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
+
+        player = GameObject.Find("Player").transform;
+
         InitializePatrolRoute();
         MoveToNextPatrolLocation();
     }
@@ -56,6 +60,14 @@ public class EnemyBehaviour : MonoBehaviour
     {
         if(other.gameObject.GetComponent<CharacterController>()!=null){
             Debug.Log("Enemigo detectado. Atacar");
+            _agent.destination = player.position;
+        }
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.GetComponent<CharacterController>() != null)
+        {
+            _agent.destination = player.position;
         }
     }
 
@@ -63,6 +75,7 @@ public class EnemyBehaviour : MonoBehaviour
     {
         if(other.gameObject.GetComponent<CharacterController>()!=null){
             Debug.Log("He perdido al enemigo de vista. Vuelta a la patrulla");
+            MoveToNextPatrolLocation();
         }
     }
 
