@@ -18,6 +18,24 @@ public class EnemyBehaviour : MonoBehaviour
 
     private NavMeshAgent _agent;
 
+    private int lives = 3;
+    public int EnemyLives{
+        get { return lives; }
+        set{
+            lives = value;
+            if(lives <= 0){
+                Destroy(this.gameObject);
+            }
+        }
+    }
+
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.name == "Bullet(Clone)"){
+            EnemyLives--;
+        }
+    }
 
     private void Start()
     {
