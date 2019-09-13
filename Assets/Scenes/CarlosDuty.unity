@@ -1407,6 +1407,7 @@ GameObject:
   - component: {fileID: 526058520}
   - component: {fileID: 526058519}
   - component: {fileID: 526058518}
+  - component: {fileID: 526058521}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1462,6 +1463,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &526058521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526058517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f15aecbc95f5476d89d6e9edcf1308b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &527680446
 GameObject:
   m_ObjectHideFlags: 0
@@ -1625,6 +1638,7 @@ GameObject:
   - component: {fileID: 698657667}
   - component: {fileID: 698657666}
   - component: {fileID: 698657671}
+  - component: {fileID: 698657672}
   m_Layer: 13
   m_Name: Player
   m_TagString: Player
@@ -1752,6 +1766,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &698657672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698657665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f15aecbc95f5476d89d6e9edcf1308b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &723671414
 GameObject:
   m_ObjectHideFlags: 0
@@ -1866,6 +1892,7 @@ GameObject:
   - component: {fileID: 754687528}
   - component: {fileID: 754687527}
   - component: {fileID: 754687526}
+  - component: {fileID: 754687530}
   m_Layer: 9
   m_Name: Origin
   m_TagString: Untagged
@@ -1945,6 +1972,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &754687530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754687525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f15aecbc95f5476d89d6e9edcf1308b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &759157758
 GameObject:
   m_ObjectHideFlags: 0
@@ -6798,6 +6837,7 @@ GameObject:
   - component: {fileID: 1575641115}
   - component: {fileID: 1575641118}
   - component: {fileID: 1575641119}
+  - component: {fileID: 1575641120}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6893,6 +6933,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraOffset: {x: 0, y: 4, z: -7}
   target: {fileID: 698657670}
+--- !u!114 &1575641120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575641114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f15aecbc95f5476d89d6e9edcf1308b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1580634680
 GameObject:
   m_ObjectHideFlags: 0
@@ -6905,6 +6957,7 @@ GameObject:
   - component: {fileID: 1580634683}
   - component: {fileID: 1580634681}
   - component: {fileID: 1580634684}
+  - component: {fileID: 1580634685}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -6956,6 +7009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showWinScreen: 0
+  showLoseScreen: 0
   labelText: Recoge los 4 objetos y gana!
   maxItems: 4
 --- !u!114 &1580634684
@@ -6972,6 +7026,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   c1: {fileID: 1575641116}
   c2: {fileID: 1829948802}
+--- !u!114 &1580634685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580634680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f15aecbc95f5476d89d6e9edcf1308b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1587860649
 GameObject:
   m_ObjectHideFlags: 0
@@ -7384,6 +7450,7 @@ GameObject:
   - component: {fileID: 1829948803}
   - component: {fileID: 1829948802}
   - component: {fileID: 1829948801}
+  - component: {fileID: 1829948804}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -7456,6 +7523,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1829948804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829948800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f15aecbc95f5476d89d6e9edcf1308b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1910504909
 GameObject:
   m_ObjectHideFlags: 0
@@ -7681,6 +7760,7 @@ GameObject:
   - component: {fileID: 1955287152}
   - component: {fileID: 1955287151}
   - component: {fileID: 1955287150}
+  - component: {fileID: 1955287154}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -7769,6 +7849,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1955287154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955287149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f15aecbc95f5476d89d6e9edcf1308b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1987290104 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4621288690711314440, guid: 22c6d7c7fdd3e418daa2d889caf7a14b,
