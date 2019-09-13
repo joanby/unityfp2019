@@ -43,6 +43,9 @@ public class CharacterController : MonoBehaviour
 
     private Rigidbody _rb;
 
+
+    private GameManager gameManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +58,16 @@ public class CharacterController : MonoBehaviour
 
         //Detectamos la componente del collider 
         this._col = GetComponent<CapsuleCollider>();
+
+
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Enemy"){
+            gameManager.HP--;
+        }
     }
 
     // Update is called once per frame
