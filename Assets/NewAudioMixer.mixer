@@ -16,7 +16,10 @@ AudioMixerController:
   m_EnableSuspend: 1
   m_UpdateMode: 0
   m_ExposedParameters: []
-  m_AudioMixerGroupViews: []
+  m_AudioMixerGroupViews:
+  - guids:
+    - 87c287cfe33684aea9dcd9eac32a5b39
+    name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
 --- !u!243 &24300002
@@ -34,6 +37,8 @@ AudioMixerGroupController:
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 24400004}
+  - {fileID: 194647033475044465}
+  - {fileID: 7035159064982530436}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
@@ -61,5 +66,46 @@ AudioMixerSnapshotController:
   m_Name: Snapshot
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: fc10a1b8ea5e542278c52090d3e1ed8a
-  m_FloatValues: {}
+  m_FloatValues:
+    1a0f7618a3f43410383ddd5914f01762: 0.04171297
   m_TransitionOverrides: {}
+--- !u!244 &194647033475044465
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 8bece5021216e4e19823e2beae26be4b
+  m_EffectName: Echo
+  m_MixLevel: 9a5c138b2f7b547eb84904f79ac4789a
+  m_Parameters:
+  - m_ParameterName: Delay
+    m_GUID: 1ab1ef584e187458ea227c7191ebbf35
+  - m_ParameterName: Decay
+    m_GUID: 97f606e1427174e0c8c001beac23bb71
+  - m_ParameterName: Max channels
+    m_GUID: b67a81069a3894efa84dc923d7ce91be
+  - m_ParameterName: Drymix
+    m_GUID: 22c0b4da9fe0a4af7a1df4735c141f08
+  - m_ParameterName: Wetmix
+    m_GUID: 9fc1564ef2d934534af0275260715efb
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &7035159064982530436
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 696160a02b42940699e36f3e0f778c45
+  m_EffectName: Distortion
+  m_MixLevel: 0e005e0130ab1410cb99701da89109de
+  m_Parameters:
+  - m_ParameterName: Level
+    m_GUID: 2ef2d602c3d6e44029522ff9b7f5e6d8
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
